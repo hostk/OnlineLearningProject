@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <!-- Templates -->      
+    <definition name="layout.basic" template="/WEB-INF/layout/master.jsp">
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+    </definition>
+    
+    <!-- Pages -->        
+    <definition name="add_course" extends="layout.basic">
+        <put-attribute name="body" value="/WEB-INF/add_course.jsp" />
+    </definition>
+    
+    <definition name="add_level" extends="layout.basic">
+    	<put-attribute name="body" value="/WEB-INF/add_level.jsp" />
+    </definition>
+ 
+ 
+    <definition name="course_details" extends="layout.basic">
+    	<put-attribute name="body" value="/WEB-INF/course_details.jsp" />
+    </definition>
+ 
+    <definition name="showLevel_Material" extends="layout.basic">
+    	<put-attribute name="body" value="/WEB-INF/showLevel_Material.jsp" />
+    </definition>
+ 
+ 
+   <definition name="video" extends="layout.basic">
+    	<put-attribute name="body" value="/WEB-INF/video.jsp" />
+    </definition>
+    
+      <definition name="Show_exam" extends="layout.basic">
+    	<put-attribute name="body" value="/WEB-INF/Show_exam.jsp" />
+    </definition>
+ 
+ 
+
+    <!-- Templates -->      
+    <definition name="layout.admin" template="/WEB-INF/layout1/master.jsp">
+      
+        <put-attribute name="header" value="/WEB-INF/layout1/header.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/layout1/footer.jsp" />
+    </definition>
+    
+    <!-- Pages -->        
+    <definition name="create_course" extends="layout.admin">
+        <put-attribute name="body" value="/WEB-INF/admin/create_course.jsp" />
+    </definition>
+    
+     <definition name="create_level" extends="layout.admin">
+        <put-attribute name="body" value="/WEB-INF/admin/create_level.jsp" />
+    </definition>
+    
+    <definition name="create_levelmaterial" extends="layout.admin">
+        <put-attribute name="body" value="/WEB-INF/admin/create_levelmaterial.jsp" />
+    </definition>
+    
+        <definition name="create_question" extends="layout.admin">
+        <put-attribute name="body" value="/WEB-INF/admin/create_question.jsp" />
+    </definition>
+    
+     <definition name="create_answer" extends="layout.admin">
+        <put-attribute name="body" value="/WEB-INF/admin/create_answer.jsp" />
+    </definition>
+   <definition name="course_list" extends="layout.admin">
+        <put-attribute name="body" value="/WEB-INF/admin/course_list.jsp" />
+    </definition>
+    
+    <definition name="level_list" extends="layout.admin">
+        <put-attribute name="body" value="/WEB-INF/admin/level_list.jsp" />
+    </definition>
+    
+    <definition name="level_material_List" extends="layout.admin">
+        <put-attribute name="body" value="/WEB-INF/admin/level_material_List.jsp" />
+    </definition>
+    
+    <definition name="question_list" extends="layout.admin">
+        <put-attribute name="body" value="/WEB-INF/admin/question_list.jsp" />
+    </definition>
+    
+     <definition name="answerList" extends="layout.admin">
+        <put-attribute name="body" value="/WEB-INF/admin/answerList.jsp" />
+    </definition>
+    
+    
+</tiles-definitions>
+
+
+
+
+
