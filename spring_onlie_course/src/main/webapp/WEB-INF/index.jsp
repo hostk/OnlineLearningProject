@@ -3,6 +3,8 @@
 <%@ include file="/WEB-INF/common/include.jsp"%>
 <%@ include file="/WEB-INF/bootstrap.jsp"%>
 <%@ page isELIgnored="false" %>
+
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -113,50 +115,80 @@
 					</div>
 				</div>
             </div>
-        </section>
+        </section><br><br>
         <!--================End Home Banner Area =================-->
          <!--================Finance Area =================-->
         <section >
         	 <div class="container" style="min-height:300px;">
-     <div class="main_title">
+        
+     		<div class="main_title">
         			<h2 class="nav-link">OUR COURSE</h2>
         			
         		</div>
-			
-			
-			
-			
-			
-			<div class="container">
-<div class="row">
-			<c:forEach items="${courseList }" var="course" varStatus="row">
+	
 
-			
-			<br>
-			<div class="col-sm-3">
-				<div class="card" style="width: 200">
-					<img class="card-img-top" src="./images/${course.photopath}"
-						alt="Card image" style="width: 200" height="260">
-					<div class="card-body">
-						<p class="card-text">${course.course_name }</p>
-						<p class="card-text">${course.course_description}</p>
-						<a href="/level/${course.course_id}" class="btn btn-primary stretched-link">Course</a>
-					</div>
-				</div>
-			</div>
-		</c:forEach>
-	</div>
+		
+  
+  <div class="row">
+<c:forEach items="${courseList }" var="course" varStatus="row">
+  <!--Grid column-->
+  <div class="col-lg-6 col-md-8">
+ <div class="card border-success mb-4">
+    <!--Card-->
+    <div class="card" style="max-width: 600px;">
+    <div class="row no-gutters">
+        <div class="col-sm-5" >
+            <img src="./images/${course.photopath}" class="card-img-top h-100" alt="...">
+        </div>
+        <div class="col-sm-7">
+            <div class="card-body">
+                <h4 class="card-title">${course.course_name }</h4>
+                <p class="card-text">${course.course_description}</p>
+                 <a href="/level/${course.course_id}" class="btn btn-success">Course</a>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
+    <!--/.Card-->
 
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </c:forEach>
+  
+  
 
 </div>
-			
-			
-			
-			
-			
-			
-			
-			
+  
+</div>
+
+	
+
         </section>
         <!--================End Finance Area =================-->
        
@@ -164,111 +196,7 @@
        
         
    
-        <!--================Testimonials Area =================-->
-        <section class="testimonials_area p_120">
-        	<div class="container">
-        		<div class="testi_slider owl-carousel">
-        			<div class="item">
-        				<div class="testi_item">
-							<img src="img/testimonials/testi-3.png" alt="">
-       						<h4>Fannie Rowe</h4>
-       						<ul class="list">
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       						</ul>
-       						<p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.</p>
-        				</div>
-        			</div>
-        			<div class="item">
-        				<div class="testi_item">
-							<img src="img/testimonials/testi-3.png" alt="">
-       						<h4>Fannie Rowe</h4>
-       						<ul class="list">
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       						</ul>
-       						<p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.</p>
-        				</div>
-        			</div>
-        			<div class="item">
-        				<div class="testi_item">
-							<img src="img/testimonials/testi-3.png" alt="">
-       						<h4>Fannie Rowe</h4>
-       						<ul class="list">
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       						</ul>
-       						<p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.</p>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Testimonials Area =================-->
         
-        <!--================Pagkages Area =================-->
-        <section class="packages_area p_120">
-        	<div class="container">
-        		<div class="row packages_inner">
-        			<div class="col-lg-4">
-        				<div class="packages_text">
-        					<h3>Choose <br />Course Packages</h3>
-        					<p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s exciting to think about setting up your own viewing station.</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-4">
-        				<div class="packages_item">
-        					<div class="pack_head">
-        						<i class="lnr lnr-graduation-hat"></i>
-        						<h3>Premium</h3>
-        						<p>For the individuals</p>
-        					</div>
-        					<div class="pack_body">
-        						<ul class="list">
-        							<li><a href="#">Secure Online Transfer</a></li>
-        							<li><a href="#">Unlimited Styles for interface</a></li>
-        							<li><a href="#">Reliable Customer Service</a></li>
-        						</ul>
-        					</div>
-        					<div class="pack_footer">
-        						<h4>£399.00</h4>
-        						<a class="main_btn" href="#">Join Now</a>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4">
-        				<div class="packages_item">
-        					<div class="pack_head">
-        						<i class="lnr lnr-diamond"></i>
-        						<h3>Exclusive</h3>
-        						<p>For the individuals</p>
-        					</div>
-        					<div class="pack_body">
-        						<ul class="list">
-        							<li><a href="#">Secure Online Transfer</a></li>
-        							<li><a href="#">Unlimited Styles for interface</a></li>
-        							<li><a href="#">Reliable Customer Service</a></li>
-        						</ul>
-        					</div>
-        					<div class="pack_footer">
-        						<h4>£399.00</h4>
-        						<a class="main_btn" href="#">Join Now</a>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Pagkages Area =================-->
         
         <!--================Latest Blog Area =================-->
         <section class="latest_blog_area p_120">
@@ -315,17 +243,7 @@
         </section>
         <!--================End Latest Blog Area =================-->
         
-        <!--================Impress Area =================-->
-        <section class="impress_area p_120">
-        	<div class="container">
-        		<div class="impress_inner text-center">
-					<h2>Become an instructor</h2>
-					<p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s exciting to think about setting up your own viewing station whether that is on the deck</p>
-					<a class="main_btn2" href="#">Apply for the post</a>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Impress Area =================-->
+       
         
         <!--================ start footer Area  =================-->	
         <footer class="footer-area p_120">

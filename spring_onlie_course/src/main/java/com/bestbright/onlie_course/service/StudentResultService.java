@@ -34,6 +34,7 @@ public class StudentResultService implements StudentResultInterface {
 
 		stresult.setQuestion(que);
 		stresult.setAnswer(ans);
+		stresult.setStatus(ans.isStatus());
 		studentResultRepository.save(stresult);
 		
 	}

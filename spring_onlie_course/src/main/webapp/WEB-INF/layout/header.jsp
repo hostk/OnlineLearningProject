@@ -1,15 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<%@ include file="/WEB-INF/common/include.jsp"%>
-<%@ include file="/WEB-INF/bootstrap.jsp"%>
-<%@ page isELIgnored="false" %>
 
     
-        
-        <!--================Header Menu Area =================-->
-       
-       <header class="header_area">
-      <div class="header-section">
+<%@ include file="/WEB-INF/common/include.jsp"%>
+
+<!--================Header Menu Area =================-->
+<div class="site-header">
+        <header class="header_area">
            	<div class="top_menu row m0">
            		<div class="container">
 					<div class="float-left">
@@ -25,10 +20,9 @@
 						
                         <ul class="list header_social">
 							
-			<a href="login.html" class="small btn btn-success px-4 py-2 rounded-0" ><i class="fa fa-users"></i> Log In</a>
-            <a href="register.html" class="small btn btn-success px-4 py-2 rounded-0"><i class="fa fa-unlock-alt"></i> Register</a>
+			<a href="login.html" class="small btn btn-success px-4 py-2 rounded-0" ><i class="fa fa-unlock-alt"></i> Log In</a>
+            <a href="register.html" class="small btn btn-success px-4 py-2 rounded-0"><i class="fa fa-users"></i> Register</a>
 						</ul>
-                         
                          
                            
                            
@@ -76,10 +70,6 @@
 					</div>
             	</nav>
             </div>
-          </div>   
-        </header>
-      <br><br><br><br><br><br>
+ </header>
+ </div>
         <!--================Header Menu Area =================-->
-       
-        
-   

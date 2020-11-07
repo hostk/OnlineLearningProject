@@ -11,7 +11,8 @@
         <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
     </definition>
     
-    <!-- Pages -->        
+    <!-- Pages -->   
+   
     <definition name="add_course" extends="layout.basic">
         <put-attribute name="body" value="/WEB-INF/add_course.jsp" />
     </definition>
