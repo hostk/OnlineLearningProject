@@ -8,7 +8,8 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6 col-6">
-            <h1 class="m-0">Course List</h1>
+            <h1 class="m-0">Course List</h1><br>
+           <h6> <a href="<c:url value='/create_course'/>">Create New</a></h6>
           </div><!-- /.col -->
           <div class="col-sm-6 col-6">
             <ol class="breadcrumb float-sm-right">
@@ -21,6 +22,7 @@
       </div><!-- /.container-fluid -->
     </div>
 <div class="container">
+
 <div class="card-body">
                 <table class="table table-bordered">
                   <thead>

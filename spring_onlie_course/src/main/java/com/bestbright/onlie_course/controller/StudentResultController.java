@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.bestbright.onlie_course.dto.QuestionDTO;
+import com.bestbright.onlie_course.dto.ResultDTO;
 import com.bestbright.onlie_course.dto.StudentResultDTO;
 import com.bestbright.onlie_course.repository.AnswerRepository;
 import com.bestbright.onlie_course.repository.QuestionRepository;
@@ -38,7 +39,7 @@ public class StudentResultController {
 	
 	
 	@PostMapping("/save_result")
-	public String saveresult(@ModelAttribute("result")StudentResultDTO dto,Model model) throws Exception {
+	public String saveresult(@ModelAttribute("result")ResultDTO dto,Model model) throws Exception {
 		if(dto!=null) {
 			
 			studentResultService.saveResult(dto);

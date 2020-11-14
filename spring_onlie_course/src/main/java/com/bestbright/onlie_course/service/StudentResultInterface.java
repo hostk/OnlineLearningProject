@@ -1,7 +1,10 @@
 package com.bestbright.onlie_course.service;
 
-import com.bestbright.onlie_course.dto.StudentResultDTO;
+import com.bestbright.onlie_course.dto.QuestionanswerDTO;
+import com.bestbright.onlie_course.dto.ResultDTO;
+
 
 public interface StudentResultInterface {
-	void saveResult(StudentResultDTO studentResultdto);
+	void saveResult(ResultDTO resultDTO);
+	
 }

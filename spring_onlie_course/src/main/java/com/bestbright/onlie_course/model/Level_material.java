@@ -27,7 +27,7 @@ public class Level_material implements Serializable {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long level_material_id;
 	private String name;
-	private String type;
+
 	private String vedioPath;
 	private String pdfPath;
 	
@@ -115,15 +115,7 @@ public class Level_material implements Serializable {
 
 	
 
-	public String getType() {
-		return type;
-	}
-
-
-
-	public void setType(String type) {
-		this.type = type;
-	}
+	
 
 
 

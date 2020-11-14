@@ -3,8 +3,10 @@
 <%@ include file="/WEB-INF/common/include.jsp"%>
 <%@ include file="/WEB-INF/bootstrap.jsp"%>
 
-<br><br><br><br><br><br>
-<div class="container">
+<div class="content-wrapper">
+    
+    
+      <div class="container-fluid">
   <div class="row">
     <nav class="col-sm-3 col-4" id="myScrollspy">
       <ul class="nav nav-pills flex-column">
@@ -24,5 +26,6 @@
    
   </div>
     
+</div>
 </div>
 

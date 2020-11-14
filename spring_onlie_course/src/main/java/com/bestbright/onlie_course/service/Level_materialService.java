@@ -58,7 +58,7 @@ public class Level_materialService implements Level_materialInterface {
 		levelmaterial.setName(levelmaterialdto.getLevel_material_name());
 		levelmaterial.setPdfPath(pdf);
 		levelmaterial.setVedioPath(video);
-			levelmaterial.setType(levelmaterialdto.getType());
+			
 			levelmaterial.setLevel(level);
 			levelMaterialRepository.save(levelmaterial);
 		}

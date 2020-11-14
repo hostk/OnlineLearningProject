@@ -13,7 +13,7 @@ public class Level_materialDTO implements Serializable{
 	private static final long serialVersionUID = 1L;
 	private Long Level_material_id;
 	private String Level_material_name;
-	private String type;
+
 	private String videoPath;
 	private String pdfPath;
 	private MultipartFile pdf;
@@ -55,12 +55,7 @@ public class Level_materialDTO implements Serializable{
 		this.video = video;
 	}
 	
-	public String getType() {
-		return type;
-	}
-	public void setType(String type) {
-		this.type = type;
-	}
+	
 	public Long getLevel_id() {
 		return level_id;
 	}

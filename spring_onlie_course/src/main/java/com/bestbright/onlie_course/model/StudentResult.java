@@ -2,8 +2,9 @@ package com.bestbright.onlie_course.model;
 
 import java.io.Serializable;
 
-
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -26,11 +27,11 @@ public class StudentResult implements Serializable {
 	
 
 
-	@OneToOne
+	@OneToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
 	@JoinColumn(name="question_id")
 	private Question question;
 	
-	@OneToOne
+	@OneToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
 	@JoinColumn(name="answer_id")
 	private Answer answer;
 

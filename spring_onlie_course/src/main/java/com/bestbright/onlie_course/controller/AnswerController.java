@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.bestbright.onlie_course.dto.AnswerDTO;
 import com.bestbright.onlie_course.dto.QuestionDTO;
+import com.bestbright.onlie_course.dto.ResultDTO;
 import com.bestbright.onlie_course.model.Answer;
 import com.bestbright.onlie_course.model.Level_material;
 import com.bestbright.onlie_course.repository.AnswerRepository;
@@ -53,6 +54,15 @@ public class AnswerController {
 		}
 	}
 	
+	
+	
+	@GetMapping("/answerList")
+	public String showQuestion(Model model) {
+		model.addAttribute("answerList",answerRepository.findAll());
+		return "answerList";
+	}
+	
+
 	@RequestMapping("/show/exam/{question_id}")
 	public String showLevelmaterialByLevel(Model model, @PathVariable("question_id") Long id) {
 	
@@ -60,6 +70,7 @@ public class AnswerController {
 		List<Answer> answers =answerService.getAnswerByQuestion(id);
 		model.addAttribute("answers", answers);
 		model.addAttribute("question_id", id);
+		model.addAttribute("result",new ResultDTO());
 		return "Show_exam";
 		
 		

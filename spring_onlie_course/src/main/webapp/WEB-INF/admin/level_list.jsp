@@ -9,6 +9,7 @@
         <div class="row mb-2">
           <div class="col-sm-6 col-6">
             <h1 class="m-0">Level List</h1>
+              <h6> <a href="<c:url value='/create_level'/>">Create New</a></h6>
           </div><!-- /.col -->
           <div class="col-sm-6 col-6">
             <ol class="breadcrumb float-sm-right">

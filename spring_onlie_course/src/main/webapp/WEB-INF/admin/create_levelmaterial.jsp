@@ -37,10 +37,7 @@
                    <form:input path="Level_material_name" class="form-control" placeholder="Enter name"/>
                   </div>
                  
-                 <div class="form-group">
-                 <label for="type">Type:</label>
-                    <form:input path="type" class="form-control" placeholder="Enter Type"/>
-                  </div>
+                
                  
                  <div class="form-group">
                   <label for="file">PDF</label>

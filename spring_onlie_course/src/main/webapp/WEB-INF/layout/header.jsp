@@ -2,9 +2,7 @@
     
 <%@ include file="/WEB-INF/common/include.jsp"%>
 
-<!--================Header Menu Area =================-->
-<div class="site-header">
-        <header class="header_area">
+<header class="header_area">
            	<div class="top_menu row m0">
            		<div class="container">
 					<div class="float-left">
@@ -20,8 +18,8 @@
 						
                         <ul class="list header_social">
 							
-			<a href="login.html" class="small btn btn-success px-4 py-2 rounded-0" ><i class="fa fa-unlock-alt"></i> Log In</a>
-            <a href="register.html" class="small btn btn-success px-4 py-2 rounded-0"><i class="fa fa-users"></i> Register</a>
+			<a href="login.html" class="small btn btn-success px-4 py-2 rounded-0" ><i class="fa fa-users"></i> Log In</a>
+            <a href="register.html" class="small btn btn-success px-4 py-2 rounded-0"><i class="fa fa-unlock-alt"></i> Register</a>
 						</ul>
                          
                            
@@ -48,7 +46,7 @@
 									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses</a>
 									<ul class="dropdown-menu">
 										<li class="nav-item"><a class="nav-link" href="courses.html">Courses</a>
-										<li class="nav-item"><a class="nav-link" href="course-details.html">Course Details</a></li>
+										</li><li class="nav-item"><a class="nav-link" href="course-details.html">Course Details</a></li>
 									</ul>
 								</li> 
 								<li class="nav-item submenu dropdown">
@@ -70,6 +68,5 @@
 					</div>
             	</nav>
             </div>
- </header>
- </div>
-        <!--================Header Menu Area =================-->
+        </header>
+        <br><br><br><br> <br><br>
