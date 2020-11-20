@@ -5,6 +5,8 @@ import java.io.Serializable;
 public class QuestionanswerDTO implements Serializable {
 	private Long question_id;
 	private Long answer_id;
+	private boolean status;
+	private Integer mark;
 
 	
 	public Long getQuestion_id() {
@@ -18,5 +20,17 @@ public class QuestionanswerDTO implements Serializable {
 	}
 	public void setAnswer_id(Long answer_id) {
 		this.answer_id = answer_id;
+	}
+	public boolean isStatus() {
+		return status;
+	}
+	public void setStatus(boolean status) {
+		this.status = status;
+	}
+	public Integer getMark() {
+		return mark;
+	}
+	public void setMark(Integer mark) {
+		this.mark = mark;
 	}
 }

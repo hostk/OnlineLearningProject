@@ -41,8 +41,7 @@ public class Question implements Serializable {
 //	@OneToOne
 //	private StudentResult studentResults;
 	
-	@OneToOne(mappedBy="question",cascade=CascadeType.ALL)
-	private StudentResult studentResult;
+	
 	
 	public Question() {
 		
@@ -87,13 +86,7 @@ public class Question implements Serializable {
 		return serialVersionUID;
 	}
 
-	public StudentResult getStudentResult() {
-		return studentResult;
-	}
-
-	public void setStudentResult(StudentResult studentResult) {
-		this.studentResult = studentResult;
-	}
+	
 	
 
 }

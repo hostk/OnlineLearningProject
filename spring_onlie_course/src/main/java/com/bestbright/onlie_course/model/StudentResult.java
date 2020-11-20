@@ -24,14 +24,15 @@ public class StudentResult implements Serializable {
 	private Long studentResult_id;
 	
 	private boolean status;
-	
+	 
+	private Integer mark;
 
 
-	@OneToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+	@ManyToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
 	@JoinColumn(name="question_id")
 	private Question question;
 	
-	@OneToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+	@ManyToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
 	@JoinColumn(name="answer_id")
 	private Answer answer;
 
@@ -84,6 +85,14 @@ public class StudentResult implements Serializable {
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
+	}
+
+	public Integer getMark() {
+		return mark;
+	}
+
+	public void setMark(Integer mark) {
+		this.mark = mark;
 	}
 	
 }

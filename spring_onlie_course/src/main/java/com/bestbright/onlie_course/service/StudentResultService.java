@@ -2,6 +2,7 @@ package com.bestbright.onlie_course.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -35,25 +36,31 @@ public class StudentResultService implements StudentResultInterface {
 	public void saveResult(ResultDTO resultDTO) {
 		// TODO Auto-generated method stub
 		
-		StudentResult stresult=new StudentResult();
-		for(QuestionanswerDTO dto : resultDTO.getResultList()) {
-			
-			if(dto.getQuestion_id()!=null) {
-				Question quest = questionRepository.getOne(dto.getQuestion_id());
+		
+		List<StudentResult> resultList=resultDTO.getResultList().stream().map(s->{
+			StudentResult stresult=new StudentResult();
+			if(s.getQuestion_id()!=null) {
+				Question quest = questionRepository.getOne(s.getQuestion_id());
 			stresult.setQuestion(quest);
+			if(s.getAnswer_id()!=null) {
+				Answer ans= answerRepository.getOne(s.getAnswer_id());
+			
+				stresult.setAnswer(ans);
+				stresult.setMark(ans.isStatus()?5:0);
+				stresult.setStatus(ans.isStatus());
+				}
 			}
 			
-			if(dto.getAnswer_id()!=null) {
-			Answer ans= answerRepository.getOne(dto.getAnswer_id());
-			stresult.setAnswer(ans);
-			}
+			
+			return stresult;
+		}).collect(Collectors.toList());
+		
 			
 			
-			System.out.print(stresult.toString());
-			studentResultRepository.save(stresult);
+			studentResultRepository.saveAll(resultList);
 		}
 				
-	}
+	
 
 
 

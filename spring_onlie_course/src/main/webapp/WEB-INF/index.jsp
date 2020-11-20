@@ -46,7 +46,7 @@
                         <ul class="list header_social">
 							
 			<a href="login.html" class="small btn btn-success px-4 py-2 rounded-0" ><i class="fa fa-users"></i> Log In</a>
-            <a href="register.html" class="small btn btn-success px-4 py-2 rounded-0"><i class="fa fa-unlock-alt"></i> Register</a>
+            <a href="regieter.jsp" class="small btn btn-success px-4 py-2 rounded-0"><i class="fa fa-unlock-alt"></i> Register</a>
 						</ul>
                          
                            

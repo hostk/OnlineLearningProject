@@ -9,6 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 
@@ -32,8 +33,7 @@ public class Answer implements Serializable{
 	
 
 	
-	@OneToOne(mappedBy="answer",cascade=CascadeType.ALL)
-	private StudentResult studentResult;
+	
 	
 	
 	public Answer () {}
